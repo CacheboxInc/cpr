@@ -69,6 +69,10 @@ class Session {
     void SetOption(const LowSpeed& low_speed);
     void SetOption(const VerifySsl& verify);
 
+    void SetOption(const SslKey& key);
+    void SetOption(const SslCert& cert);
+    void SetOption(const CA& ca);
+
     Response Delete();
     Response Get();
     Response Head();
